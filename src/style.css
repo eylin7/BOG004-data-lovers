@@ -1,0 +1,21 @@
+body {
+  background-color: #e0b92e;
+}
+img {
+  position: center;
+  display: block;
+  margin: auto;
+  width: 900x;
+  height: 500px;
+
+  background: url(fondopo.jpg);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.9));
+  border-radius: 35px;
+  
+}
+#bienvenida, #contenedor, #contenedor1 {
+  display: none;
+
+}
