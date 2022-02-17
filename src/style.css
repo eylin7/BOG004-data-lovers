@@ -1,7 +1,10 @@
 body {
-  background-color: #e0b92e;
+margin: 15px;
+border: 0px;
+
+  
 }
-img {
+.imagen-bienvenida {
   position: center;
   display: block;
   margin: auto;
@@ -15,7 +18,52 @@ img {
   border-radius: 35px;
   
 }
-#bienvenida, #contenedor, #contenedor1 {
-  display: none;
+.cuerpo-tarjetas {
+  display: grid;
+  border: 3px solid red;
+  background-color: aliceblue;
+  /*display: flex;
+  border: 3px solid red;
+  flex-direction: column;
+  background-color: aliceblue;*/
+  
+}
+.ordenar-tarjetas {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  /*display:flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  justify-content:center;*/
+}
 
+#ocultar{
+  display: none;
+}
+.contenedordetarjeta {
+display: flex;
+flex-wrap: wrap;
+width: 110%;
+/*border: 1px solid blue;*/
+flex-direction: row;
+align-items: stretch;
+}
+#menu ul {
+  list-style: none;
+
+}
+#menu #item{
+  float: left;
+}
+#menu #item a{
+  background: #000000;
+  color: aliceblue;
+  padding: 12px 22px;
+  display: block;
+  text-decoration: none;
+}
+#segundaPantalla{
+  display: none;
 }
