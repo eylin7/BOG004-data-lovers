@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Data Lovers</title>
-    <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width = divice-width,inictial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <main>
       <nav>
-         <button id="boton1" class="btn btn1"> Pokemon</button>
-      <form  id="boton2 " class="btn btn2">
-        <select>
-          <option disable select> Tipos </option>
-          <option> rock</option>
-          <option> Gras</option>
-          <option> fairy</option>
-          <option> electric</option>
-          <option> water</option>
-        </select>
-      </form>
-         <button id="boton3" class="btn btn3"> Elementos</button>
+
+        <button  id="boton1">Pokemon</button>
+        <form id="boton2" class="btn btn2">
+          <select id="tipos" name="type">
+            <option>Tipos</option>
+            <option value="rock">Rock</option>
+            <option value="grass">Grass</option>
+            <option value="fairy">Fairy</option>
+            <option value="electtric">Electtric</option>
+            <option value="water">Water</option>
+            <option value="poison">Poison</option>
+            <option value="normal">Normal</option>
+            <option value="bug">Bug</option>
+            <option value="option">Psychic</option>
+            <option value="dragon">Dragon</option>
+            <option value="steel">Steel</option>
+            <option value="ground">Ground</option>
+            <option value="fight">Fight</option>
+            <option value="flying">Flying</option>
+            <option value="fairy">Fairy</option>
+            <option value="dark">Dark</option>
+            <option value="ice">Ice</option>
+            <option value="ghost">Ghost</option>
+          </select>
+        </form>
+        <button> Habilidades </button>
+        
       </nav>
-     </header>
-       
-     <img id="imagen1" class= "imagen bienvenida" src="fondopo.jpeg">
+    </header>
+
+    <img id="imagen1" class="imagen-bienvenida" src="fondopo.jpeg" />
 
     <section id="ocultar">
-      <div class="contenedordetarjetas">
-      <div id= "pokemones" class="ordenar-tarjetas"></div>
+      <div class="contenedordetarjeta">
+        <div id="pokemones" class="ordenar-tarjetas"></div>
       </div>
-      </section>
+    </section>
 
-
-      <div id="root"></div>
+    <section id="segundaPantalla">
+      <div id="misTipos"></div>
+      <h1>Holi</h1>
+    </section>
+    <div id="root"></div>
     <script defer src="main.js" type="module"></script>
   </body>
 </html>
