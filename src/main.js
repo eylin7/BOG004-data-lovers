@@ -7,7 +7,7 @@ let pokemones = data.pokemon;
 console.log(pokemones);
 //console.log(example, data);
 let pagina1 = document.getElementById("boton1");
-pagina1.addEventListener("click", mostrar);
+pagina1.addEventListener("change", mostrar);
 //Esta funcion oculta pantalla principal y muestra lista de pokemones
 function mostrar() {
   document.getElementById("ocultar").style.display = "flex";
@@ -15,30 +15,6 @@ function mostrar() {
   document.getElementById("segundaPantalla").style.display="none"
 }
 
-
-//Esta funcion muestra todos los pokemones en pantalla
-/*const mostrarDatos = (mostrarPokemones) => {
-  console.log(mostrarPokemones);
-  let traertarjetas = document.getElementById("pokemones");
-  traertarjetas.innerHTML = "";//para que se limpie la pantalla cuando carga
-  mostrarPokemones.forEach(function (pokemon, indice) {
-    //console.log(pokemon, indice);
-    const nombre = pokemon.name;
-    const numeros = pokemon.num;
-    let tarjeta = document.createElement("div");
-    tarjeta.setAttribute("class", "cuerpo-tarjetas");
-    //Este nodo es para insertar la imagen del pokemon
-    let imagenes = document.createElement("img");
-    imagenes.setAttribute("src", pokemon.img);
-    tarjeta.appendChild(imagenes);
-    let traertarjetas = document.getElementById("pokemones");
-    traertarjetas.appendChild(tarjeta);
-    const p = document.createElement("p");
-    p.innerText = nombre + " " + numeros;
-    tarjeta.appendChild(p);
- 
-  });
-};*/
 
 const mostrarDatos= (descripcion)=>{ 
   let traertarjetas = document.getElementById("pokemones");
@@ -76,4 +52,17 @@ traerTipos.addEventListener("change",()=> mostrarDatos(filtrarTipos(pokemones, t
 
 
 let btnTodosLosPokemones= document.getElementById("boton1");
-btnTodosLosPokemones.addEventListener("click",()=> mostrarDatos(ordenarPokemonZA(pokemones)));
+btnTodosLosPokemones.addEventListener("change",()=> mostrarDatos(ordenarPokemonAZ(pokemones,btnTodosLosPokemones.value)));
+
+
+
+
+
+
+
+//let btnTodosLosPokeza= document.querySelector("btn1");
+//btnTodosLosPokeza.addEventListener("change",()=> mostrarDatos(ordenarPokemonZA(pokemones,btnTodosLosPokeza.value, )));
+
+
+//let btnTodosLosPokemones= document.getElementById("boton1");
+//btnTodosLosPokemones.addEventListener("click",()=> mostrarDatos(ordenarPokemonZA(pokemones)))
