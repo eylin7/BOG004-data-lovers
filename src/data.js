@@ -32,3 +32,5 @@ return 1
 return ordenar;
 };
 console.log(ordenarPokemonAZ)
+
+
