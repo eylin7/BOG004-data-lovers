@@ -7,16 +7,27 @@ console.log(pokemones)
  pokemones.forEach (function(pokemon, indice) {
     //console.log(pokemon, indice);
     const nombre = pokemon.name;
-    console.log(nombre)
-    const contenedor = document.getElementById("contenedor");
+    const numeros = pokemon.num;
+    let tarjeta = document.createElement("div");
+    tarjeta.setAttribute("class", "cuerpo tarjeta");
+
+    let imagenes = document.createElement("img");
+    imagenes.setAttribute("src", pokemon.img)
+    tarjeta.appendChild(imagenes)
+    let traertarjetas = document.getElementById("pokemones");
+    traertarjetas.appendChild(tarjeta);
     const p = document.createElement("p")
-    p.innerText= nombre
-    contenedor.appendChild(p)
-  })
-  //return 'example';
+    p.innerText = nombre + " " + numeros;
+    tarjeta.appendChild(p);
+    
+  });
+  
 };
 
-//export const anotherExample = () => {
-  //return 'OMG';
 
 
+
+
+
+
+  

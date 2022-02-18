@@ -3,37 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
-    <meta name ="viewport" content="width = divice-width,inictial-scale=1.0">
+    <meta name ="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <main>
-      <div>
+      <nav>
          <button id="boton1" class="btn btn1"> Pokemon</button>
-          <button id="boton2" class="btn btn2"> Habilidad</button>
-          <button id="boton3" class="btn btn3"> Elementos</button>
+      <form  id="boton2 " class="btn btn2">
+        <select>
+          <option disable select> Tipos </option>
+          <option> rock</option>
+          <option> Gras</option>
+          <option> fairy</option>
+          <option> electric</option>
+          <option> water</option>
+        </select>
+      </form>
+         <button id="boton3" class="btn btn3"> Elementos</button>
+      </nav>
+     </header>
+       
+     <img id="imagen1" class= "imagen bienvenida" src="fondopo.jpeg">
+
+    <section id="ocultar">
+      <div class="contenedordetarjetas">
+      <div id= "pokemones" class="ordenar-tarjetas"></div>
       </div>
-    
-
-    </header>
-    <section>
-      <div id="contenedor"> </div>
-<div id="bienvenida">
-</div>
- <img id="imagen1" src= "fondopo.jpeg" width="1000">
-</main>
-</section>
-
-
- <div id="contenedor1">
-  <h1>chao</h1>
-  </div>
-</section>
-    
+      </section>
 
 
       <div id="root"></div>
-    <script src="main.js" type="module"></script>
+    <script defer src="main.js" type="module"></script>
   </body>
 </html>

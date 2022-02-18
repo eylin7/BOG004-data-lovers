@@ -1,12 +1,12 @@
 body {
   background-color: #e0b92e;
 }
-img {
+.imagen-bienvenida {
   position: center;
   display: block;
   margin: auto;
   width: 900x;
-  height: 500px;
+  height: 500px; 
 
   background: url(fondopo.jpg);
   border: 1px solid #000000;
@@ -15,7 +15,24 @@ img {
   border-radius: 35px;
   
 }
-#bienvenida, #contenedor, #contenedor1 {
-  display: none;
+ 
+.cuerpo-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
 
 }
+#ocultar {
+  display: none
+
+}
+.contenedordetarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  width: 110%;
+  flex-direction: row;
+  align-items: stretch;
+}
+  
