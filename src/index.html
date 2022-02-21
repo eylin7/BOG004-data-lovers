@@ -8,9 +8,12 @@
   </head>
   <body>
     <header>
-      <nav>
-
-        <button  id="boton1">Pokemon</button>
+      <nav class="ordenHorizontal">
+        <select id="boton1">
+          <option>pokemones</option>
+          <option value="az">A - Z</option>
+          <option value="za">Z - A</option>
+        </select>
         <form id="boton2" class="btn btn2">
           <select id="tipos" name="type">
             <option>Tipos</option>
@@ -34,13 +37,24 @@
             <option value="ghost">Ghost</option>
           </select>
         </form>
-        <button>  </button>
-        
+        <button id="boton3">Estadistica</button>
       </nav>
     </header>
-
-    <img id="imagen1" class="imagen-bienvenida" src="fondopo.jpeg" />
-
+    <div id="ordenarVista">
+      <img
+        id="imagen1"
+        class="imagen-bienvenida"
+        src="http://www.gratistodo.com/wp-content/uploads/2016/07/23.jpg"
+      />
+      <div id="informacion">
+        <p>
+          Descubre el maravilloso mundo de Pokémon, que comenzo con el viaje por
+          la region de Kanto,de un niño llamado Ash y su pokémon Pikachu juntos
+          conoceran a un monton de personas y Pokémon, descubre a todos los
+          Pokémon, sus tipos, generación y caracteristicas. Inicia tu aventura.
+        </p>
+      </div>
+    </div>
     <section id="ocultar">
       <div class="contenedordetarjeta">
         <div id="pokemones" class="ordenar-tarjetas"></div>
@@ -49,9 +63,8 @@
 
     <section id="segundaPantalla">
       <div id="misTipos"></div>
-      <h1>Holi</h1>
     </section>
-    <div id="root"></div>
+    <footer class="pieDepagina">ESTE ES EL PIE DE PÁGINA</footer>
     <script defer src="main.js" type="module"></script>
   </body>
 </html>

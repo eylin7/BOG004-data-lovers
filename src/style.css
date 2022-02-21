@@ -1,69 +1,164 @@
-body {
-margin: 15px;
-border: 0px;
 
-  
+body {
+  margin: 30px;
+  border: 0px;
+  background-image: url("https://4.bp.blogspot.com/-LmNbD996GZE/UzVo7dbRBSI/AAAAAAAAAM8/99-ySwen1JI/s1600/3d_133_20130108_1651659886.jpg");
 }
+header {
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #09c4d1;
+  background-image: url("https://thumbs.dreamstime.com/b/fondo-del-universo-44663900.jpg");
+ 
+}
+
 .imagen-bienvenida {
-  position: center;
-  display: block;
-  margin: auto;
-  width: 900x;
-  height: 500px;
+
+ width: 50%;
+  position: relative;
+  
 
   background: url(fondopo.jpg);
   border: 1px solid #000000;
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.9));
   border-radius: 35px;
-  
+}
+#ordenarVista {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-direction: column;
+}
+#informacion {
+  display: none;
+  display: flex;
+  width: 90%;
+ 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .cuerpo-tarjetas {
-  display: grid;
-  border: 3px solid red;
-  background-color: aliceblue;
-  /*display: flex;
-  border: 3px solid red;
-  flex-direction: column;
-  background-color: aliceblue;*/
-  
+  display: flex;
+  color: rgb(10, 10, 1);
+  border-radius: 10px 10px 0px 10px;
+  border: 3px solid rgb(28, 37, 26);
+  justify-content: centers;
+  text-align: center;
+  width: 30%;
+  margin: 0px 0px 10px 0px;
+  background-image: url("https://png.pngtree.com/background/20210715/original/pngtree-amazing-abstract-universe-galaxy-background-design-picture-image_1264036.jpg");
+
+  border: 1px solid #272426;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.9));
+  border-radius: 35px;
 }
-.ordenar-tarjetas {
-  display: grid;
-  grid-template-columns:1fr 1fr 1fr 1fr ;
-  gap: 20px;
-  /*display:flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  width: 100%;
-  justify-content:center;*/
+.datosPokemon .tiposPokemon {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
-#ocultar{
+.ordenar-tarjetas {
+  display: flex;
+  color: rgb(206, 203, 8);
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  grid-auto-rows: minmax(20rem, 50%);
+  grid-auto-columns: 33rem;
+}
+
+#ocultar {
   display: none;
 }
 .contenedordetarjeta {
-display: flex;
-flex-wrap: wrap;
-width: 110%;
-/*border: 1px solid blue;*/
-flex-direction: row;
-align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  width: 110%;
+  /*border: 1px solid blue;*/
+  flex-direction: row;
+  align-items: stretch;
 }
-#menu ul {
-  list-style: none;
+
+#segundaPantalla {
+  display: none;
+}
+.ordenHorizontal {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  margin: right 50px; 
+  position: absolute;
+
 
 }
-#menu #item{
-  float: left;
+
+.descripcion {
+  display: flex;
+  width: 50%;
 }
-#menu #item a{
-  background: #000000;
-  color: aliceblue;
-  padding: 12px 22px;
-  display: block;
-  text-decoration: none;
+.pieDepagina{
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #09c4d1;
+  background-image: url("https://thumbs.dreamstime.com/b/fondo-del-universo-44663900.jpg");
+  
 }
-#segundaPantalla{
-  display: none;
+#boton1 {
+
+  
+position: relative;
+width: 90px;
+height: 29px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background: rgba(248, 247, 247, 0.967);
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border: 1px solid #e6dfdf;
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.9));
+border-radius: 35px;
+display: flex;
+justify-content: center;
+}
+
+#tipos{
+  position: relative;
+width: 92px;
+height: 30px;
+
+background: #fbf8fc;
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+border: 1px solid #f0e4e4;
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.9));
+border-radius: 35px;
+}
+
+
+
+#boton3{
+  
+position: relative;
+width: 90px;
+height: 29px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background: rgba(241, 227, 227, 0.981);
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+border: 1px solid #e4dddd;
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.9));
+border-radius: 35px;
+
 }

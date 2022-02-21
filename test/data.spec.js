@@ -1,7 +1,7 @@
-import { example, anotherExample } from '../src/data.js';
+import { filtrarTipos, ordenarPokemonAZ,ordenarPokemonZA } from '../src/data.js';
 
 
-describe('example', () => {
+describe(filtrarTipos, () => {
   it('is a function', () => {
     expect(typeof example).toBe('function');
   });
