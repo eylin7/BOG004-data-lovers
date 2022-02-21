@@ -1,7 +1,7 @@
 import data from "./data/pokemon/pokemon.js";
 import { filtrarTipos } from "./data.js";
-import { ordenarPokemonZA } from "./data.js";
-import { ordenarPokemonAZ } from "./data.js";
+import { ordenarPokemones } from "./data.js";
+
 
 let pokemones = data.pokemon;
 console.log(pokemones);
@@ -58,15 +58,29 @@ traerTipos.addEventListener("change", () =>
 );
 console.log(filtrarTipos(pokemones, traerTipos.value));
 
-let btOrdenar = document.getElementById("boton1");
-btOrdenar.addEventListener("change", () => {
-  if (btOrdenar.value === "original") {
-    mostrarDatos(pokemones);
-  } else if (btOrdenar.value === "az") {
-    mostrarDatos(ordenarPokemonAZ(pokemones, pokemones.name));
-  } else if (btOrdenar.value === "za") {
-    mostrarDatos(ordenarPokemonZA(pokemones, pokemones.name));
-  } else {
-    return;
+const pokemonesOrdenados = document.getElementById("boton1")
+pokemonesOrdenados.addEventListener("change", () => {
+  let orden = ordenarPokemones(pokemones, ordenarPokemones.value)
+  if(pokemonesOrdenados.value === "za"){ (mostrarDatos(orden));
+  }else if (pokemonesOrdenados.value  === "az") 
+  { (mostrarDatos(orden.reverse()))
+    
+  
   }
-});
+
+  
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+

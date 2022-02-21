@@ -57,7 +57,7 @@ header {
   border-radius: 35px;
 }
 .datosPokemon .tiposPokemon {
-  display: flex;
+  
   flex-direction: column;
   width: 50%;
 }
