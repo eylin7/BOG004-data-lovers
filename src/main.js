@@ -1,11 +1,12 @@
 import data from "./data/pokemon/pokemon.js";
 import { filtrarTipos } from "./data.js";
 import { ordenarPokemones } from "./data.js";
+//import {promedioDepokemones} from "./data.js";
 
 
 let pokemones = data.pokemon;
-console.log(pokemones);
-
+//console.log(pokemones);
+//promedioDepokemones(pokemones)
 let pagina1 = document.getElementById("boton1");
 pagina1.addEventListener("change", mostrar);
 //Esta funcion oculta pantalla principal y muestra lista de pokemones
@@ -14,12 +15,16 @@ function mostrar() {
   document.getElementById("imagen1").style.display = "none";
   document.getElementById("informacion").style.display = "none";
   document.getElementById("segundaPantalla").style.display = "none";
+  document.getElementById("tercerapantalla").style.display = "flex";
+  document.getElementById("segundaPantalla").style.display = "none";
+  
+  
 }
 //Funcion contine tarjetas de los pokemones
 const mostrarDatos = (descripcion) => {
   let traertarjetas = document.getElementById("pokemones");
   traertarjetas.innerHTML = "";
-  descripcion.forEach(function (pokemon, indice) {
+  descripcion.forEach(function (pokemon) {
     let tarjeta2 = document.createElement("div");
     tarjeta2.setAttribute("class", "cuerpo-tarjetas");
     if (descripcion == pokemones) {
@@ -56,7 +61,7 @@ let traerTipos = document.getElementById("tipos");
 traerTipos.addEventListener("change", () =>
   mostrarDatos(filtrarTipos(pokemones, traerTipos.value))
 );
-console.log(filtrarTipos(pokemones, traerTipos.value));
+//console.log(filtrarTipos(pokemones, traerTipos.value));
 
 const pokemonesOrdenados = document.getElementById("boton1")
 pokemonesOrdenados.addEventListener("change", () => {
@@ -72,7 +77,13 @@ pokemonesOrdenados.addEventListener("change", () => {
 
 })
 
+let promedioDepoke= document.getElementById("boton3")
+promedioDepoke.addEventListener("click", () =>{
+promedioDepokemones(pokemones)
 
+ 
+ 
+})
 
 
 
