@@ -77,7 +77,7 @@ header {
   display: none;
 }
 .contenedordetarjeta {
-  display: flex;
+ display: flex;
   flex-wrap: wrap;
   width: 110%;
   /*border: 1px solid blue;*/
