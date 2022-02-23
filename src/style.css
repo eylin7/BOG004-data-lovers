@@ -14,12 +14,19 @@ header {
   background-image: url("https://thumbs.dreamstime.com/b/fondo-del-universo-44663900.jpg");
  
 }
+p{
+
+  color: #e4dddd;
+  width: 80%;
+  margin: 20px;
+  border: #e4dddd;
+}
+
 
 .imagen-bienvenida {
 
- width: 50%;
-  position: relative;
-  
+  width: 50%;
+  margin: 20px;
 
   background: url(fondopo.jpg);
   border: 1px solid #000000;
@@ -41,14 +48,14 @@ header {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .cuerpo-tarjetas {
-  display: flex;
-  color: rgb(10, 10, 1);
+  
+  color: rgb(248, 248, 244);
   border-radius: 10px 10px 0px 10px;
   border: 3px solid rgb(28, 37, 26);
   justify-content: centers;
   text-align: center;
   width: 30%;
-  margin: 0px 0px 10px 0px;
+  margin: 10px 0px 10px 0px;
   background-image: url("https://png.pngtree.com/background/20210715/original/pngtree-amazing-abstract-universe-galaxy-background-design-picture-image_1264036.jpg");
 
   border: 1px solid #272426;
@@ -89,7 +96,7 @@ header {
   display: none;
 }
 .ordenHorizontal {
-  display: flex;
+ display: flex;
   margin-bottom: 1rem;
   justify-content: space-between;
   align-items: center;
@@ -100,10 +107,6 @@ header {
 
 }
 
-.descripcion {
-  display: flex;
-  width: 50%;
-}
 .pieDepagina{
   width: 100%;
   padding: 20px 0;
@@ -116,10 +119,9 @@ header {
 }
 #boton1 {
 
-  
-position: relative;
-width: 90px;
-height: 29px;
+
+width: 100px;
+height: 30px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 background: rgba(248, 247, 247, 0.967);
 box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -127,13 +129,12 @@ border: 1px solid #e6dfdf;
 box-sizing: border-box;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.9));
 border-radius: 35px;
-display: flex;
-justify-content: center;
+
 }
 
 #tipos{
-  position: relative;
-width: 92px;
+  position: center;
+width: 100px;
 height: 30px;
 
 background: #fbf8fc;
@@ -149,9 +150,9 @@ border-radius: 35px;
 
 #boton3{
   
-position: relative;
-width: 90px;
-height: 29px;
+
+width: 100px;
+height: 30px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 background: rgba(241, 227, 227, 0.981);
 box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
