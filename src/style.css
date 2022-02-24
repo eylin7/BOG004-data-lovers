@@ -1,16 +1,17 @@
 
 body {
-  margin: 30px;
+  margin: 8em;
   border: 0px;
-  background-image: url("https://4.bp.blogspot.com/-LmNbD996GZE/UzVo7dbRBSI/AAAAAAAAAM8/99-ySwen1JI/s1600/3d_133_20130108_1651659886.jpg");
+  *background-image: url("https://i.pinimg.com/originals/6f/70/d5/6f70d5a12f19dc7167dbd367dcbf91c9.jpg");
+  
 }
 header {
- 
-  width: 100%;
+  width: 65em;
   padding: 30px 0;
   display: flex;
-  align-items:center;
-  background-image: url("https://thumbs.dreamstime.com/b/fondo-del-universo-44663900.jpg");
+   align-items: center;
+  background-image: url("https://i.pinimg.com/originals/cd/e3/a4/cde3a4af3e7d77c8c56fb71de549c378.jpg");
+ 
  
 }
 p{
@@ -20,11 +21,13 @@ p{
   margin: 20px;
   border: #e4dddd;
 }
-
+h5{
+  min-width: 100px;
+}
 
 .imagen-bienvenida {
 
-  width: 50%;
+  width: 60%;
   margin: 20px;
 
   background: url(fondopo.jpg);
@@ -36,19 +39,21 @@ p{
 #interfazDeBienvenida {
   display: flex;
   justify-content: space-around;
-  align-items:center;
- 
+  align-items: center;
+  
 }
 #informacion {
   display: none;
   display: flex;
   width: 90%;
- 
+  flex-wrap: nowrap;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .cuerpo-tarjetas {
   min-width: 100px;
   max-width:1000px;
+  
+ 
   color: rgb(248, 248, 244);
   border-radius: 10px 10px 0px 10px;
   border: 3px solid rgb(28, 37, 26);
@@ -56,7 +61,7 @@ p{
   text-align: center;
   width: 30%;
   margin: 10px 0px 10px 0px;
-  background-image: url("https://png.pngtree.com/background/20210715/original/pngtree-amazing-abstract-universe-galaxy-background-design-picture-image_1264036.jpg");
+  background-image: url("https://allegra.flowersetcfresno.com/pic/639584_full-fondos-de-pantalla-solidos-negros-en-la-parte-trasera-de-mi-cuarto-hay-un-armario-con-una-cortina-a.png");
 
   border: 1px solid #272426;
   box-sizing: border-box;
@@ -65,8 +70,9 @@ p{
 }
 .datosPokemon .tiposPokemon {
   
-  flex-direction: column;
+  
   width: 50%;
+  
 }
 
 .ordenar-tarjetas {
@@ -75,7 +81,7 @@ p{
   color: rgb(206, 203, 8);
   
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-content: stretch;
   grid-auto-rows: minmax(20rem, 50%);
   grid-auto-columns: 33rem;
@@ -86,12 +92,13 @@ p{
 }
 .contenedordetarjeta {
  display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 110%;
   /*border: 1px solid blue;*/
   flex-direction: row;
   align-items: stretch;
 }
+
 
 #segundaPantalla {
   display: none;
@@ -106,7 +113,7 @@ p{
   align-items: center;
   margin: right 50px; 
   position: absolute;
-
+ background-image: ("");
 
 }
 
@@ -116,8 +123,7 @@ p{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #09c4d1;
-  background-image: url("https://thumbs.dreamstime.com/b/fondo-del-universo-44663900.jpg");
+  background-image: url("https://i.pinimg.com/originals/cd/e3/a4/cde3a4af3e7d77c8c56fb71de549c378.jpg");
   
 }
 #boton1 {
