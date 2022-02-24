@@ -1,11 +1,11 @@
 import data from "./data/pokemon/pokemon.js";
 import { filtrarTipos } from "./data.js";
 import { ordenarPokemones } from "./data.js";
-//import {promedioDepokemones} from "./data.js";
+import {promedioDepokemones} from "./data.js";
 
 let pokemones = data.pokemon;
 //console.log(pokemones);
-//promedioDepokemones(pokemones)
+promedioDepokemones(pokemones)
 let pagina1 = document.getElementById("boton1");
 pagina1.addEventListener("change", mostrar);
 //Esta funcion oculta pantalla principal y muestra lista de pokemones
