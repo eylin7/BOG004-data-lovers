@@ -1,11 +1,11 @@
 import data from "./data/pokemon/pokemon.js";
 import { filtrarTipos } from "./data.js";
 import { ordenarPokemones } from "./data.js";
-//import {promedioDepokemones} from "./data.js";
+import {promedioDepokemones} from "./data.js";
 
 let pokemones = data.pokemon;
 //console.log(pokemones);
-//promedioDepokemones(pokemones)
+promedioDepokemones(pokemones)
 let pagina1 = document.getElementById("boton1");
 pagina1.addEventListener("change", mostrar);
 //Esta funcion oculta pantalla principal y muestra lista de pokemones
@@ -67,10 +67,11 @@ pokemonesOrdenados.addEventListener("change", () => {
     mostrarDatos(orden);
   } else if (pokemonesOrdenados.value === "az") {
     mostrarDatos(orden.reverse());
+  
   }
 });
 
-/*let promedioDepoke = document.getElementById("boton3");
+let promedioDepoke = document.getElementById("boton3")
 promedioDepoke.addEventListener("click", () => {
-  promedioDepokemones(pokemones);
-});*/
+  promedioDepokemones(pokemones).innerHTML("valor");
+});

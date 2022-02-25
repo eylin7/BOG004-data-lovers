@@ -6,8 +6,8 @@ body {
   
 }
 header {
-  width: 65em;
-  padding: 30px 0;
+  width: 100%;
+  padding: 20px 0;
   display: flex;
    align-items: center;
   background-image: url("https://i.pinimg.com/originals/cd/e3/a4/cde3a4af3e7d77c8c56fb71de549c378.jpg");
@@ -50,10 +50,7 @@ h5{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .cuerpo-tarjetas {
-  min-width: 100px;
-  max-width:1000px;
-  
- 
+  display: flex;
   color: rgb(248, 248, 244);
   border-radius: 10px 10px 0px 10px;
   border: 3px solid rgb(28, 37, 26);
@@ -79,9 +76,9 @@ h5{
 
   display: flex;
   color: rgb(206, 203, 8);
-  
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+
+  flex-flow: row wrap;
+  justify-content: space-between;
   align-content: stretch;
   grid-auto-rows: minmax(20rem, 50%);
   grid-auto-columns: 33rem;
@@ -173,3 +170,19 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.9));
 border-radius: 35px;
 
 }
+@media screen and( max-width : 800px ) {
+  body {
+width: 100%;
+  }
+  .ordenHorizontal {
+    width: 100%;
+  }
+  .cuerpo-tarjetas {
+    width: 80%;
+  }
+  .ordenar-tarjetas{
+    grid-auto-rows: minmax(50rem, 50%);
+  grid-auto-columns: 50vmax;
+  }
+} 
+
