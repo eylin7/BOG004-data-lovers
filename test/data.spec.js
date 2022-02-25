@@ -1,4 +1,4 @@
-import { filtrarTipos, ordenarPokemones } from '../src/data.js';
+import { filtrarTipos, ordenarPokemones,promedioDepokemones } from '../src/data.js';
 
 const pokemonTest = [
     { 
@@ -9,25 +9,23 @@ const pokemonTest = [
       ],
     },
     {
-      "name": "togepi",
-      "type": [
-        "grass",
-        "ice"
-      ],  
-    },
-    {
       "name": "zubat",
       "type": [
       "dragon",
       "water"
       ],
     },
+    {
+      "name": "togepi",
+      "type": [
+        "grass",
+        "ice"
+      ],  
+    },
+    
+    
 ]
 describe(filtrarTipos, () => {
- // it('is a function', () => {
-   // expect(typeof example).toBe('function');
- // });
-
   it('filtro `grass`', () => { 
     const resultadoPokemon = [
       { 
@@ -47,7 +45,7 @@ describe(filtrarTipos, () => {
     
   ]
     expect(filtrarTipos(pokemonTest, "grass")).toEqual(resultadoPokemon);
-  });
+  })
 });
 
 
@@ -61,3 +59,24 @@ describe("ordenar Pokemones", () => {
     expect(ordenarZa[0].name).toEqual('zubat'); 
   });
 });
+ 
+describe(promedioDepokemones, () => {
+  it('return  `nos da el promedio de ataque`', () => {
+    const promedioTest = [
+      { 
+        "stats": {
+          "base-attack": "154.72111553784862",
+          "base-defense": "149",
+          
+        },
+          
+        
+      }
+    
+  ]
+  expect(promedioDepokemones(promedioTest, "base-attack")).toEqual(154.72111553784862);
+
+})
+})
+  
+

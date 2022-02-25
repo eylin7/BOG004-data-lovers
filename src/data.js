@@ -15,10 +15,5 @@ export const promedioDepokemones= (arregloDeData) => {
   let suma = values.reduce((acumulador, valor )=>  parseInt(acumulador)+ parseInt(valor) )
   let promedio = suma / values.length
    return promedio
-   //console.log(element.stats["base-attack","base-defense","base-stamina"])
    
-   //let total = suma / value.length
-   //console.log(total)
- 
-
  }

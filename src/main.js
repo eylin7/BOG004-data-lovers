@@ -4,8 +4,8 @@ import { ordenarPokemones } from "./data.js";
 import {promedioDepokemones} from "./data.js";
 
 let pokemones = data.pokemon;
-//console.log(pokemones);
-promedioDepokemones(pokemones)
+
+
 let pagina1 = document.getElementById("boton1");
 pagina1.addEventListener("change", mostrar);
 //Esta funcion oculta pantalla principal y muestra lista de pokemones
@@ -31,8 +31,6 @@ const mostrarDatos = (descripcion) => {
         <h1>${pokemon.name}</h1>
         <h2>${pokemon.num}</h2>
         <h2>${pokemon.type}</h2>
-        
-        
       </div>
       `;
     } else {
@@ -58,7 +56,7 @@ let traerTipos = document.getElementById("tipos");
 traerTipos.addEventListener("change", () =>
   mostrarDatos(filtrarTipos(pokemones, traerTipos.value))
 );
-//console.log(filtrarTipos(pokemones, traerTipos.value));
+
 
 const pokemonesOrdenados = document.getElementById("boton1");
 pokemonesOrdenados.addEventListener("change", () => {
@@ -70,7 +68,9 @@ pokemonesOrdenados.addEventListener("change", () => {
   }
 });
 
-/*let promedioDepoke = document.getElementById("boton3");
-promedioDepoke.addEventListener("click", () => {
-  promedioDepokemones(pokemones);
-});*/
+let promedioDepoke = document.getElementById("promedio")
+ promedioDepoke.addEventListener("click", () => {
+  document.getElementById("valor").innerHTML=promedioDepokemones(pokemones)
+ 
+});
+
