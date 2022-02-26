@@ -1,8 +1,8 @@
 
 body {
-  margin: 8em;
+  /*margin: 8em;*/
   border: 0px;
-  *background-image: url("https://i.pinimg.com/originals/6f/70/d5/6f70d5a12f19dc7167dbd367dcbf91c9.jpg");
+  background-color: #B7D7D9;
   
 }
 header {
@@ -10,7 +10,7 @@ header {
   padding: 20px 0;
   display: flex;
    align-items: center;
-  background-image: url("https://i.pinimg.com/originals/cd/e3/a4/cde3a4af3e7d77c8c56fb71de549c378.jpg");
+  background-color: #F19CA2;
  
  
 }
@@ -31,40 +31,58 @@ h5{
   margin: 20px;
 
   background: url(fondopo.jpg);
-  border: 1px solid #000000;
+  border: 1px solid #fcfcfc;
   box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.9));
+  filter: drop-shadow(0px 4px 4px #fcfcfc);
   border-radius: 35px;
 }
 #interfazDeBienvenida {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
+  border: 1px solid red;
 }
 #informacion {
   display: none;
   display: flex;
   width: 90%;
-  flex-wrap: nowrap;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 1px solid blue;
+ 
+  font-family: 'Quicksand', sans-serif;
 }
 .cuerpo-tarjetas {
   display: flex;
-  color: rgb(248, 248, 244);
+  color: rgb #038C8C;
   border-radius: 10px 10px 0px 10px;
-  border: 3px solid rgb(28, 37, 26);
+  border: 3px solid #FFE9CD;
   justify-content: center;
   text-align: center;
   width: 30%;
   margin: 10px 0px 10px 0px;
-  background-image: url("https://allegra.flowersetcfresno.com/pic/639584_full-fondos-de-pantalla-solidos-negros-en-la-parte-trasera-de-mi-cuarto-hay-un-armario-con-una-cortina-a.png");
+  background-color:#F8D7D0;
+  background-size: contain;
 
-  border: 1px solid #272426;
+  border: 1px solid #FFE9CD;
   box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.9));
+  filter: drop-shadow(0px 4px 4px #FFE9CD);
   border-radius: 35px;
+  align-items: center;
 }
+
+.datosPokemon h1 {
+margin-bottom: 0%;
+margin-top: 0%;
+font-family: 'Quicksand', sans-serif; 
+  
+}
+
+.datosPokemon h2 {
+  margin-bottom: 0%;
+  margin-top: 0%;
+  font-family: 'Quicksand', sans-serif; 
+}
+
+
 .datosPokemon .tiposPokemon {
   
   
@@ -75,11 +93,12 @@ h5{
 .ordenar-tarjetas {
 
   display: flex;
-  color: rgb(206, 203, 8);
+  color: #038C8C;
+ 
 
   flex-flow: row wrap;
   justify-content: space-between;
-  align-content: stretch;
+  align-content: center;
   grid-auto-rows: minmax(20rem, 50%);
   grid-auto-columns: 33rem;
 }
@@ -120,7 +139,7 @@ h5{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url("https://i.pinimg.com/originals/cd/e3/a4/cde3a4af3e7d77c8c56fb71de549c378.jpg");
+  background-color: #F19CA2;
   
 }
 #boton1 {
@@ -128,7 +147,7 @@ h5{
 
 width: 100px;
 height: 30px;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family:'Quicksand', sans-serif; 
 background: rgba(248, 247, 247, 0.967);
 box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 border: 1px solid #e6dfdf;
@@ -146,7 +165,7 @@ height: 30px;
 
 background: #fbf8fc;
 box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family: 'Quicksand', sans-serif;
 border: 1px solid #f0e4e4;
 box-sizing: border-box;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.9));
@@ -160,7 +179,7 @@ border-radius: 35px;
 
 width: 100px;
 height: 30px;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family: 'Quicksand', sans-serif;
 background: rgba(241, 227, 227, 0.981);
 box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -170,7 +189,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.9));
 border-radius: 35px;
 
 }
-@media screen and( max-width : 800px ) {
+@media screen and ( max-width : 800px ) {
   body {
 width: 100%;
   }
@@ -179,10 +198,13 @@ width: 100%;
   }
   .cuerpo-tarjetas {
     width: 80%;
+    
   }
   .ordenar-tarjetas{
     grid-auto-rows: minmax(50rem, 50%);
   grid-auto-columns: 50vmax;
+  
   }
+
 } 
 
