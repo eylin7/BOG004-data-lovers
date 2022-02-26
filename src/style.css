@@ -1,8 +1,13 @@
-
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
 body {
-  margin: 8em;
-  border: 0px;
-  background-color: #B7D7D9;
+  background-color: #1B4E7C;
   
 }
 header {
@@ -10,17 +15,12 @@ header {
   padding: 20px 0;
   display: flex;
    align-items: center;
-  background-color: #F19CA2;
+  background-color: #FF9F00;
  
  
 }
-p{
 
-  color: #e4dddd;
-  width: 80%;
-  margin: 20px;
-  border: #e4dddd;
-}
+
 
 
 .imagen-bienvenida {
@@ -62,22 +62,18 @@ p{
 
   border: 1px solid #FFE9CD;
   box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px #FFE9CD);
+  filter: drop-shadow(0px 4px 4px #68625c);
   border-radius: 35px;
   align-items: center;
 }
 
-.datosPokemon h1 {
+.datos-pokemon {
 margin-bottom: 0%;
 margin-top: 0%;
-font-family: 'Quicksand', sans-serif; 
-  
-}
-
-.datosPokemon h2 {
-  margin-bottom: 0%;
-  margin-top: 0%;
-  font-family: 'Quicksand', sans-serif; 
+font-family: 'Quicksand', sans-serif;
+font-size: 1.3rem;
+font-weight: 500;
+color: black;
 }
 
 
@@ -132,7 +128,7 @@ font-family: 'Quicksand', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #F19CA2;
+  background-color:#FF9F00;
   
 }
 #boton1 {
@@ -181,7 +177,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.9));
 border-radius: 35px;
 
 }
-@media screen and ( max-width : 800px ) {
+/*@media screen and ( max-width : 800px ) {
   body {
 width: 100%;
   }
