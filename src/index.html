@@ -3,25 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <title>Data Lovers</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconectar" href="https://fonts.googleapis.com">
-      <link rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https: //fonts.googleapis.com/css2? family= Quicksand:wght@300 & display=swap" rel="stylesheet">
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconectar" href="https://fonts.googleapis.com" />
+    <link rel="preconectar" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https: //fonts.googleapis.com/css2? family= Quicksand:wght@300 & display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <nav class="ordenHorizontal">
-        <select id="boton1">
-          <option>pokemones</option>
+        <select class="todos-losBotones" id="boton1">
+          <option>POKÉMON</option>
           <option value="az">A - Z</option>
           <option value="za">Z - A</option>
         </select>
-        <form id="boton2" class="btn btn2">
+        <form id="boton2" class="todos-losBotones">
           <select id="tipos" name="type">
-            <option>Tipos</option>
+            <option>TIPOS</option>
             <option value="rock">Rock</option>
             <option value="grass">Grass</option>
             <option value="fairy">Fairy</option>
@@ -45,20 +46,13 @@
       </nav>
     </header>
     <div id="interfazDeBienvenida">
-      <img
-        id="imagen1"
-        class="imagen-bienvenida"
-        src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2021/07/pokemon-unite-2414165.jpg?itok=8Ncd6CFM"
-      />
-      <div id="informacion">
-        <h4>
-          Descubre el maravilloso mundo de Pokémon donde conoceras  a todos los
-          Pokémon, sus tipos, generación , caracteristicas y promedio de ataque . Inicia tu aventura.
-        </h4>
-        <button id="promedio" class="btnpromedio">promedio pokemon</button>
+      <img id="imagen1"class="imagen-bienvenida" src=" https://cdn.freebiesupply.com/logos/thumbs/2x/pokemon-23-logo.png"/>
+      <div id="informacion" class="informacion-promedio">
+        <button id="promedio" class="calculo" >Promedio Pokémon según su Ataque</button>
+        <h2 id="valor"></h2>
       </div>
-      <h2 id="valor"></h2>
     </div>
+
     <section id="ocultar">
       <div class="contenedordetarjeta">
         <div id="pokemones" class="ordenar-tarjetas"></div>
@@ -68,10 +62,10 @@
     <section id="segundaPantalla">
       <div id="misTipos"></div>
     </section>
-    <section id="tercerapantalla" >
-    <h1> </h1>
+    <section id="tercerapantalla">
+      <h1></h1>
     </section>
-    <footer class="pieDepagina">POKÉMON</footer>
+    <footer class="pieDepagina">POKEDEX HECHO POR ZULAY Y EYLIN</footer>
     <script defer src="main.js" type="module"></script>
   </body>
 </html>

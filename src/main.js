@@ -17,6 +17,7 @@ function mostrar() {
   document.getElementById("tercerapantalla").style.display = "flex";
   document.getElementById("segundaPantalla").style.display = "none";
   document.getElementById("valor").style.display = "none";
+  document.getElementById("interfazDeBienvenida").style.display = "none";
 }
 //Funcion contine tarjetas de los pokemones
 const mostrarDatos = (descripcion) => {
@@ -28,18 +29,18 @@ const mostrarDatos = (descripcion) => {
     if (descripcion == pokemones) {
       tarjeta2.innerHTML = `
       <img class="img" src=${pokemon.img}>
-      <div class="datosPokemon">
-        <h1>${pokemon.name}</h1>
-        <h2>${pokemon.num}</h2>
-        <h2>${pokemon.type}</h2>
+      <div class="datos-pokemon">
+        <p>${pokemon.name}</p>
+        <p>${pokemon.num}</p>
+        <p>${pokemon.type}</p>
       </div>
       `;
     } else {
       tarjeta2.innerHTML = `
     <img class="img" src=${pokemon.img}>
     <div class="tiposPokemon">
-    <h1>${pokemon.name}</h1>
-    <h2>${pokemon.generation.num}</h2>
+    <p>${pokemon.name}</p>
+    <p>${pokemon.generation.num}</p>
     <div class="descripcion">
     <p>${pokemon.about}</p>
     </div>
