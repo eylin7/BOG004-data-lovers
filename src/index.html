@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <title>Data Lovers</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconectar" href="https://fonts.googleapis.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconectar" href="https://fonts.googleapis.com"/>
     <link rel="preconectar" href="https://fonts.gstatic.com" crossorigin />
     <link href="https: //fonts.googleapis.com/css2? family= Quicksand:wght@300 & display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -26,18 +26,18 @@
             <option value="rock">Rock</option>
             <option value="grass">Grass</option>
             <option value="fairy">Fairy</option>
-            <option value="electtric">Electtric</option>
+            <option value="electric">Electtric</option>
             <option value="water">Water</option>
             <option value="poison">Poison</option>
             <option value="normal">Normal</option>
             <option value="bug">Bug</option>
-            <option value="option">Psychic</option>
+            <option value="psychic">Psychic</option>
             <option value="dragon">Dragon</option>
             <option value="steel">Steel</option>
             <option value="ground">Ground</option>
-            <option value="fight">Fight</option>
+            <option value="fighting">Fighting</option>
             <option value="flying">Flying</option>
-            <option value="fairy">Fairy</option>
+            <option value="fire">Fire</option>
             <option value="dark">Dark</option>
             <option value="ice">Ice</option>
             <option value="ghost">Ghost</option>
@@ -46,26 +46,23 @@
       </nav>
     </header>
     <div id="interfazDeBienvenida">
-      <img id="imagen1"class="imagen-bienvenida" src=" https://cdn.freebiesupply.com/logos/thumbs/2x/pokemon-23-logo.png"/>
+      <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/pokemon-23-logo.png" id="imagen1" class="imagen-bienvenida" >
       <div id="informacion" class="informacion-promedio">
-        <button id="promedio" class="calculo" >Promedio Pokémon según su Ataque</button>
+        <button id="promedio" class="calculo" >Promedio de Ataque pokémon</button>
         <h2 id="valor"></h2>
+        <button id="promedioDefensa" class="calculo" >Promedio Defensa</button>
+        <h2 id="valorDefensa"></h2>
       </div>
     </div>
-
-    <section id="ocultar">
+    <section id="ocultar" class="contenedor-pokemones">
       <div class="contenedordetarjeta">
         <div id="pokemones" class="ordenar-tarjetas"></div>
       </div>
     </section>
-
     <section id="segundaPantalla">
       <div id="misTipos"></div>
     </section>
-    <section id="tercerapantalla">
-      <h1></h1>
-    </section>
-    <footer class="pieDepagina">POKEDEX HECHO POR ZULAY Y EYLIN</footer>
+    <footer class="pieDepagina"><h4>elaborado por : Zulay Mejia / Eylin URDANETA</h4> </footer>
     <script defer src="main.js" type="module"></script>
   </body>
 </html>

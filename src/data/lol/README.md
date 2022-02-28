@@ -1,46 +1,100 @@
-# League of Legends (LoL)
+# Pokémon
 
-League of Legends es un juego de estrategia que se juega en línea y que es
-multijugador. Tiene millones de jugadores en todo el mundo y, por ahora es uno
-de los _esports_ de referencia y que más público atraen.
-Durante el juego, los equipos trabajan juntos para lograr una
-condición de victoria que sucede al destruir la estructura central en la base
-del equipo enemigo.
+El siguiente proyecto Titulados "Pokémon" es una versión de una pokédex, donde el principal usuario son niños y jóvenes entre 6 a 20 años,
+quienes ingresan a la página en busca de información detallada acerca de los pokémon como por ejemplo; su nombre
+, número, tipo, generación y una breve descripción de cada uno.
 
-En todos los modos de juego, los jugadores controlan
-personajes llamados **campeones**, que son elegidos o asignados en cada partida,
-y que tienen un conjunto de habilidades únicas. Es con esos campeones con los
-que se juega toda la partida. Para entender un poco más del juego puedes entrar
-a este [link](https://www.redbull.com/es-es/5-consejos-empezar-jugar-league-of-legends#targetText=Lo%20primero%20que%20tienes%20que,donde%20lucha%20cinco%20contra%20cinco).
+Por tal motivo en este proyecto el usuario podrá visualizar e interactuar con la página obteniendo información
+de los 251 pokémon, logrando ordenarlos alfabéticamente de la A a la Z y viceversa,
+también podrá filtrar los pokémon según su tipo y obtener un promedio global de Ataque y Defensa. Esta información según una investigación previa
+con los usuarios les permitirá obtener datos precisos que usualmente necesita para determinar características de los pokémon al momento
+de jugar o visualizar la serie pokémon.
 
-## Hallazgos
+## Hallazgos e Historias de Usuario
 
-* Para poder elegir a los campeones que van a combatir en una partida, es
-  importante para el jugador de LoL poder saber cuál es el rol de cada campeón.
-* Adicionalmente al rol, cada campeón tiene distintos niveles de ataque, por
-  ejemplo dentro de los _tanques_ hay campeones con distintos niveles de ataque,
-  defensa, velocidad o poder. Es importante para el jugador de LoL poder saber
-  quiénes son los más poderosos o lo más defensivos, para poder elegir al mejor
-  grupo de campeones para una partida.estarán
-  en tu equipo y que lucharán contra el enemigo.
-* Los campeones tienen distintos tipos de habilidades, algunas inherentes
-  (básicas/principales) a ellos y otras (pasivas/secundarias) que pueden ser
-  adquiridas. En ambos casos, estas habilidades pueden ir desarrollándose hasta
-  alcanzar su máximo nivel.
-* Los campeones tienen distintos roles en los que se desempeñan:
+Para responder las necesidades de los usuarios se realizó un formulario de investigación que permitiera determinar
+cuales eran los datos más relevantes que el usuario quería encontrar en la página web y de qué forma. Se aplico a 7 jovenes voluntarios, entre ellos 2 niños.
+Se puede visualizar el formulario en el siguinte link: https://forms.gle/nFAmsyLpsuiicjFo7
 
-  - Luchador: Especializado en combate cercano. Combinnan objetos de daño con
-    objetos de aguante. También se los conoce como _offtanks_.
-  - Tirador: Especializado en ataque a distancia. Popularmente conocido como
-    _AD Carry_ del inglés _attack damage carry_ o carreador de daño de ataque.
-  - Mago o Hechicero: Especializado en habilidades y daño mágico. Popularmente
-    conocido como _AP Carry_ del inglés _ability power carry_ o carreador de
-    poder de habilidad.
-  - Asesino: Especializado en emboscar al enemigo, atacando por sorpresa y
-    retirándose rápidamente. Su misión es eliminar al jugador más importante del
-    equipo enemigo (generalmente el tirador) aunque ello suponga morir él
-    también.
-  - Tanque: Especializado en resistencia. Su misión es absorber la mayor
-    cantidad de daño posible e iniciar las peleas.
-  - Apoyo o Soporte: Especializado en apoyar a su equipo y aportar visión en el
-    mapa mediante guardianes de visión (_wards_).
+A partir de esta información y otros datos recopilados a través de conversaciones con los usuario se construyeron las historias de usuario y los prototipos de baja y alta fidelidad.
+A continuación las historias de usuario elaboradas para el proyecto:
+
+Historia de Usuario 1: Interfaz de bienvenida
+YO COMO usuario de App Web Pokémon
+QUIERO ver una pantalla de inicio donde puedan ingresar a las secciones de la página.
+PARA Poder identificar donde se encuentra la información acerca de los pokémon.
+
+CRITERIOS DE ACEPTACIÓN
+
+2 botones en la parte superior centrados.
+Los botones deben tener un título descriptivo
+La pantalla debe contener un encabezado, una imagen de contenido y el footer
+
+DEFINICIÓN DE TERMINADO
+El código ha sido testeado con al menos 3 usuarios
+cumple los estilos establecidos en el prototipo
+El código está en el repositorio
+Es responsive.
+
+Historia de Usuario 2: Orden de los Pokémon
+YO COMO usuario de App Web Pokémon
+QUIERO ver a los Pokémon en tarjetas
+por su nombre , número e imagen.
+PARA conocer a los pokémons ordenados.
+
+CRITERIOS DE ACEPTACIÓN
+Un botón en la parte superior de la pantalla, que al presionar direccione hacia el listado de Pokémon
+Una vista donde aparezca una lista de los Pokémon por Imagen, Nombre y Número.
+Una tarjeta por cada pokémon ordenados alfabéticamente
+DEFINICIÓN DE TERMINADO
+El código cumple con la guía de estilos del prototipo de alta fidelidad
+El código está en el repositorio
+El código pasa los test.
+Es responsive.
+.
+
+Historia de Usuario 3: Tipos de Pokémon
+YO COMO usuario de App Web Pokemón
+QUIERO poder clasificar a los pokémon según su tipo.
+PARA verlos según su elemento .
+
+CRITERIOS DE ACEPTACIÓN
+debe tener un botón desplegable que tenga los tipos de pokemones
+cuando el usuario haga click le muestre el tipo de pokémon que seleccionó
+Deben aparecer en tarjetas y contener una descripción.
+
+DEFINICIÓN DE TERMINADO
+El código cumple con la guía de estilos del prototipo de alta fidelidad
+El código está en el repositorio
+El código pasa los test.
+Es responsive.
+
+Historia de Usuario 4: Estadísticas
+YO COMO usuario de App Web Pokémon
+QUIERO tener datos precisos acerca de los ataques y defensa de los pokémon
+PARA obtener una estadística de los ataques y defensa de los 251 pokémon.
+CRITERIOS DE ACEPTACIÓN.
+Un botón en la parte central de la pantalla de bienvenida.
+Poder seleccionar el dato que desea visualizar.
+
+DEFINICIÓN DE TERMINADO
+El código está en el repositorio
+El código pasa los test.
+Es responsive.
+
+### Prototipos
+
+Posteriormente se crearon los prototipos de baja y alta fidelidad, adjuntos en los siguientes link:
+Prototipo alta fidelidad: https://www.figma.com/file/ZWYZxfh1mgRIALltweb9aC/Data-lovers-team-library?node-id=413%3A2
+
+Prototipo baja fidelidad: https://trello.com/1/cards/62003bd217c037226bdc0806/attachments/6201ad1acdb77c6501491eea/download/WhatsApp_Image_2022-02-07_at_12.42.59_PM.jpeg
+
+https://trello.com/1/cards/62003bd217c037226bdc0806/attachments/6200422682da4c853c230c9d/download/prototipo.jpeg
+
+https://trello.com/1/cards/62003bd217c037226bdc0806/attachments/6201ad1acdb77c6501491eea/previews/6201ad1bcdb77c6501491f1b/download/WhatsApp_Image_2022-02-07_at_12.42.59_PM.jpeg.jpg
+
+#### Testeos de usabilidad
+
+Para lograr el producto final fue necesario realizar varios test de usabilidad, en una oportunidad el usuario manifestó que la primera pantalla, diseñada en principio con una imagen que ocupaba el 70%, no tenía ninguna relevancia o aportaba algo significativo, en tal sentido se diseñó nuevamente y se le dio una finalidad.
+También se itero varias veces el diseño de la tarjeta, sobre todo el color.
+Finalmente se logró un producto que satisface al usuario y es sencillo de utilizar.

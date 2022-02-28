@@ -1,65 +1,56 @@
 import data from "./data/pokemon/pokemon.js";
-import { filtrarTipos } from "./data.js";
-import { ordenarPokemones } from "./data.js";
-import {promedioDepokemones} from "./data.js";
-
+import {
+  filtrarTipos,
+  ordenarPokemones,
+  promedioDepokemones,
+  promedioDefensa,
+} from "./data.js";
+//RECIBIR LA DATA
 let pokemones = data.pokemon;
-
-
+//REALIZA LOS EVENTOS PARA MOSTRAR Y OCULTAR PANTALLAS
 let pagina1 = document.getElementById("boton1");
 pagina1.addEventListener("change", mostrar);
-//Esta funcion oculta pantalla principal y muestra lista de pokemones
+//FUNCION PARA OCULTAR Y MOSTRAR PANTALLAS
 function mostrar() {
   document.getElementById("ocultar").style.display = "flex";
-  document.getElementById("imagen1").style.display = "none";
-  document.getElementById("informacion").style.display = "none";
-  document.getElementById("segundaPantalla").style.display = "none";
-  document.getElementById("tercerapantalla").style.display = "flex";
-  document.getElementById("segundaPantalla").style.display = "none";
   document.getElementById("valor").style.display = "none";
   document.getElementById("interfazDeBienvenida").style.display = "none";
 }
-//Funcion contine tarjetas de los pokemones
-const mostrarDatos = (descripcion) => {
-  let traertarjetas = document.getElementById("pokemones");
-  traertarjetas.innerHTML = "";
-  descripcion.forEach(function (pokemon) {
-    let tarjeta2 = document.createElement("div");
-    tarjeta2.setAttribute("class", "cuerpo-tarjetas");
-    if (descripcion == pokemones) {
-      tarjeta2.innerHTML = `
+//FUNCION PARA CREAR Y MOSTRAR TARJETAS POKEMON
+const mostrarDatos = (pokemonesArreglo) => {
+  let traertarjeta = document.getElementById("pokemones");
+  traertarjeta.innerHTML = "";
+  pokemonesArreglo.forEach(function (pokemon) {
+    let tarjeta = document.createElement("div");
+    tarjeta.setAttribute("class", "cuerpo-tarjetas");
+    if (pokemonesArreglo == pokemones) {
+      tarjeta.innerHTML = `
       <img class="img" src=${pokemon.img}>
       <div class="datos-pokemon">
-        <p>${pokemon.name}</p>
+        <h2>${pokemon.name}</h2>
         <p>${pokemon.num}</p>
         <p>${pokemon.type}</p>
       </div>
       `;
     } else {
-      tarjeta2.innerHTML = `
+      tarjeta.innerHTML = `
     <img class="img" src=${pokemon.img}>
-    <div class="tiposPokemon">
-    <p>${pokemon.name}</p>
-    <p>${pokemon.generation.num}</p>
-    <div class="descripcion">
+    <div class="tipos-pokemon">
+    <h2>${pokemon.name}</h2>
+    <h3>${pokemon.generation.num}</h3>
     <p>${pokemon.about}</p>
-    </div>
     </div>
     `;
     }
-
-    traertarjetas.appendChild(tarjeta2);
+    traertarjeta.appendChild(tarjeta);
   });
 };
 
-//Llamando a las funciones
-
+//EVENTOS PARA EJECUTAR LAS FUNCIONES MOSTRARDATOS Y LAS DE DATA.JS
 let traerTipos = document.getElementById("tipos");
 traerTipos.addEventListener("change", () =>
   mostrarDatos(filtrarTipos(pokemones, traerTipos.value))
 );
-
-
 const pokemonesOrdenados = document.getElementById("boton1");
 pokemonesOrdenados.addEventListener("change", () => {
   let orden = ordenarPokemones(pokemones, ordenarPokemones.value);
@@ -67,13 +58,14 @@ pokemonesOrdenados.addEventListener("change", () => {
     mostrarDatos(orden);
   } else if (pokemonesOrdenados.value === "az") {
     mostrarDatos(orden.reverse());
-  
   }
 });
-
-let promedioDepoke = document.getElementById("promedio")
- promedioDepoke.addEventListener("click", () => {
-  document.getElementById("valor").innerHTML=promedioDepokemones(pokemones)
- 
+let promedioDepoke = document.getElementById("promedio");
+promedioDepoke.addEventListener("click", () => {
+  document.getElementById("valor").innerHTML = promedioDepokemones(pokemones);
 });
-
+let promedioDepokemon = document.getElementById("promedioDefensa");
+promedioDepokemon.addEventListener("click", () => {
+  document.getElementById("valorDefensa").innerHTML =
+    promedioDefensa(pokemones);
+});
