@@ -16,6 +16,8 @@ function mostrar() {
   document.getElementById("segundaPantalla").style.display = "none";
   document.getElementById("tercerapantalla").style.display = "flex";
   document.getElementById("segundaPantalla").style.display = "none";
+  document.getElementById("valor").style.display = "none";
+  document.getElementById("interfazDeBienvenida").style.display = "none";
 }
 //Funcion contine tarjetas de los pokemones
 const mostrarDatos = (descripcion) => {
@@ -65,6 +67,7 @@ pokemonesOrdenados.addEventListener("change", () => {
     mostrarDatos(orden);
   } else if (pokemonesOrdenados.value === "az") {
     mostrarDatos(orden.reverse());
+  
   }
 });
 
