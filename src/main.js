@@ -15,7 +15,10 @@ function mostrar() {
   document.getElementById("ocultar").style.display = "flex";
   document.getElementById("valor").style.display = "none";
   document.getElementById("interfazDeBienvenida").style.display = "none";
+
 }
+
+
 //FUNCION PARA CREAR Y MOSTRAR TARJETAS POKEMON
 const mostrarDatos = (pokemonesArreglo) => {
   let traertarjeta = document.getElementById("pokemones");

@@ -14,6 +14,16 @@ header {
   justify-content: center;
   background-color: #ff9f00;
 }
+.boton-inicio img {
+ margin: right 20px; ;
+ max-width: 100px;
+ min-width: 50px;
+  
+  
+
+
+}
+
 .imagen-bienvenida {
   display: flex;
   margin: 20px;
